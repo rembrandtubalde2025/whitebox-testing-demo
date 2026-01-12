@@ -17,8 +17,9 @@ test('REGULAR monto alto (>500)', () => {
 });
 
 test('REGULAR monto bajo (<=500)', () => {
-  expect(calcularDescuento(400, 'REGULAR')).toBeUndefined();
+  expect(calcularDescuento(400, 'REGULAR')).toBe(0);
 });
+
 
 test('cliente NUEVO', () => {
   expect(calcularDescuento(200, 'NUEVO')).toBe(10);
