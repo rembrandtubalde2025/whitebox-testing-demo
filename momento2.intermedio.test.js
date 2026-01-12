@@ -1,4 +1,4 @@
-const { calcularDescuento } = require('./momento2.intermedio.test');
+const { calcularDescuento } = require('./calculator');
 
 test('VIP con monto bajo', () => {
   expect(calcularDescuento(500, 'VIP')).toBe(100);
