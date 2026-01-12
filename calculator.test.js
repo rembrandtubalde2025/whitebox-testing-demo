@@ -1,4 +1,4 @@
-const { calcularDescuento } = require('../src/calcularDescuento');
+const { calcularDescuento } = require('../calcularDescuento');
 
 test('VIP con monto alto', () => {
   const resultado = calcularDescuento(1500, 'VIP');
